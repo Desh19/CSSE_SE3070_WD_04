@@ -27,6 +27,11 @@ connection.once("open",()=>{
     console.log("MongoDB Connected");
 });
 
+const UserRoutes = require('./routes/UserRegister');
+app.use("/User",UserRoutes);
+
+const PaymentsRoutes = require('./routes/TopUpCard');
+app.use("/Payment",PaymentsRoutes);
 
 app.listen(PORT,()=>{
     console.log(`Server is up and running on port ${PORT}`);

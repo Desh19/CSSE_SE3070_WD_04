@@ -7,7 +7,7 @@ export default function Header() {
     <div>
         <nav class="navbar navbar-expand-lg bg-light navbar fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand bar" href="#">SL PUBLIC TRANSPORT</a>
+            <a><Link className="navbar-brand bar" aria-current="page" to="/">SL PUBLIC TRANSPORT</Link></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -18,6 +18,9 @@ export default function Header() {
                 </li>
                 <li class="nav-item">
                 <Link className="nav-link barlink" aria-current="page" to="#">Complains</Link>
+                </li>
+                <li class="nav-item">
+                <Link className="nav-link barlink" aria-current="page" to="/FirstHome" onClick={localStorage.clear} >Sign out</Link>
                 </li>
                 
             </ul>
