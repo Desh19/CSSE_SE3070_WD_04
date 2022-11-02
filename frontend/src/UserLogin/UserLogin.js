@@ -31,7 +31,7 @@ export default function UserLogin() {
                     button: false,
                   });
 
-               navigate("/",{
+               navigate("/FirstHome",{
                 state:{
                     id:res.data._id
                 }
