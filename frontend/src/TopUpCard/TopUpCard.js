@@ -4,6 +4,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import swal from "sweetalert";
 import {Link} from 'react-router-dom';
 import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 import './topupcard.css';
 
 
@@ -120,11 +121,13 @@ const Payment =() => {
 
        
         <div class="col-12">
-            <center><button type="submit" class="btn btn-primary" onClick={() => sendData(input.AccountantName, input._id, input.cardholdername, input.cardNum, input.cardexpiryDate, input.cvc, input.cardNum, input.ammount)}><Link to ="/FirstHome" style={{textDecoration:'none', color:'white'}}>Top Up</Link></button></center>
+            <center><button type="submit" class="btn btn-primary" onClick={() => sendData(input.AccountantName, input._id, input.cardholdername, input.cardNum, input.cardexpiryDate, input.cvc, input.cardNum, input.ammount)}><Link to ="/Home" style={{textDecoration:'none', color:'white'}}>Top Up</Link></button></center>
             
         </div>
         </form>
      </div>
+
+     <Footer/> 
 
   </div>
   )

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {NavLink,Link} from 'react-router-dom';
 import './home.css';
+import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 
 export default function Home() {
@@ -90,6 +91,7 @@ export default function Home() {
             </div>
         
           </div> 
+          <Footer/> 
 
 
     </div>

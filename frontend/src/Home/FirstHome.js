@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {NavLink,Link} from 'react-router-dom';
 import './home.css';
 import Header from '../Header/NotRegHeader';
+import Footer from '../Footer/Footer';
 
 export default function FirstHome() {
 
@@ -62,6 +63,8 @@ export default function FirstHome() {
           </div>
           </div>
         </div>
+
+        <Footer/> 
 
 
     </div>     
