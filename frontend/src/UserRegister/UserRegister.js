@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../Header/NotRegHeader';
+import Footer from '../Footer/Footer';
 import './userregister.css';
 import { useState } from 'react';
 import axios from "axios";
@@ -182,6 +183,8 @@ else{
             </div>
 
         {/* ================model=============== */}
+
+        <Footer/> 
 
 
     </div>

@@ -2,7 +2,8 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import swal from "sweetalert";
 import Header from '../Header/NotRegHeader';
-import '../UserRegister/userregister.css';
+import './userlogin.css';
+import Footer from '../Footer/Footer';
 import { Link , useNavigate } from 'react-router-dom';
 
 export default function UserLogin() {
@@ -31,7 +32,7 @@ export default function UserLogin() {
                     button: false,
                   });
 
-               navigate("/FirstHome",{
+               navigate("/Home",{
                 state:{
                     id:res.data._id
                 }
@@ -59,10 +60,10 @@ export default function UserLogin() {
 
     return (
         <div>
-            <div className='registerArea'>
+            <div className='loginArea'>
                 <Header />
                 <center>
-                    <div className='regArea'>
+                    <div className='logArea'>
                         <h2>Login Now</h2>
                         <div className='regui'>
 
@@ -85,6 +86,9 @@ export default function UserLogin() {
                 </center>
 
             </div>
+
+            <Footer/> 
+
         </div>
     )
 }
