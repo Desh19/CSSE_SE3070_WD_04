@@ -13,8 +13,8 @@ function App() {
     <Routes>
       <Route>
 
-        <Route path='/' element={<Home/>} />
-        <Route path='/FirstHome' element={<FirstHome/>} />
+        <Route path='/' element={<FirstHome/>} />
+        <Route path='/FirstHome' element={<Home/>} />
         <Route path='/UserRegister' element={<UserRegister/>} />
         <Route path='/UserLogin' element={<UserLogin/>} />
         <Route path='/TopUpCard' element={<TopUpCard/>} />
