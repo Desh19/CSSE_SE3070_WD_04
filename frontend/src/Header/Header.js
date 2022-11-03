@@ -20,7 +20,7 @@ export default function Header() {
                 <Link className="nav-link barlink" aria-current="page" to="#">Complains</Link>
                 </li>
                 <li class="nav-item">
-                <Link className="nav-link barlink" aria-current="page" to="/Home" onClick={localStorage.clear} >Sign out</Link>
+                <Link className="nav-link barlink" aria-current="page" to="/" onClick={localStorage.clear} >Sign out</Link>
                 </li>
                 
             </ul>
