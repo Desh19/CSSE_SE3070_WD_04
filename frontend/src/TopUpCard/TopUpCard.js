@@ -33,16 +33,17 @@ const Payment =() => {
     const [cvc, setCvc] = useState("");
     const [ammount, setAmmount] = useState("");
   
-    const sendData = async (AccountantName)=>{
+    const sendData = async (firstName,lastName)=>{
       const newForm={
       
-      AccountantName: AccountantName,
-      AccountantId: localStorage.getItem("id"),
+      firstName: firstName,
+      lastName: lastName,
       cardholdername: cardholdername,
       cardNum: cardNum,
       cardexpiryDate: cardexpiryDate,
       cvc: cvc,
       ammount: ammount,
+      AccountantId: localStorage.getItem("id"),
       date: new Date().toISOString()
   
     }
@@ -121,7 +122,7 @@ const Payment =() => {
 
        
         <div class="col-12">
-            <center><button type="submit" class="btn btn-primary" onClick={() => sendData(input.AccountantName, input._id, input.cardholdername, input.cardNum, input.cardexpiryDate, input.cvc, input.cardNum, input.ammount)}><Link to ="/Home" style={{textDecoration:'none', color:'white'}}>Top Up</Link></button></center>
+            <center><button type="submit" class="btn btn-primary" onClick={() => sendData(input.firstName, input.lastName, input.cardholdername, input.cardNum, input.cardexpiryDate, input.cvc, input.cardNum, input.ammount)}><Link to ="/Home" style={{textDecoration:'none', color:'white'}}>Top Up</Link></button></center>
             
         </div>
         </form>
