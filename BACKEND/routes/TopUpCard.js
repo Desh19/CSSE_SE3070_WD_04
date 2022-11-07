@@ -4,24 +4,28 @@ const jwt =require('jsonwebtoken');
 
 router.route("/add").post((req,res)=>{
 
-    const AccountantId = req.body.AccountatntId;
-    const AccountantName = req.body.AccountatntName;
+    
+    const firstName = req.body.firstName;
+    const lastName = req.body.lastName;
     const cardholdername = req.body.cardholdername; 
     const cardNum = req.body.cardNum;
     const cardexpiryDate = req.body.cardexpiryDate;
     const cvc = req.body.cvc;
     const ammount = req.body.ammount;
+    const AccountantId = req.body.AccountantId;
     const date = req.body.date;
 
     const newTopUpCard_model = new TopUpCard_model({
 
-        AccountantId,
-        AccountantName,
+        
+        firstName,
+        lastName,
         cardholdername,
         cardNum,
         cardexpiryDate,
         cvc,
         ammount,
+        AccountantId,
         date
 
        
