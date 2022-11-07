@@ -1,0 +1,26 @@
+.dashboardArea{
+    width: 100%;
+    height: 100vh;
+    padding: 120px 5% 20px 20%;
+    background-color: white;
+}
+
+h1{
+    text-align: left;
+}
+
+.Dsahboardcontainer{
+    width: 100%;
+    height: auto;
+}
+
+.item{
+    background-color: white;
+    height: 150px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(161, 161, 161, 0.5);
+    box-shadow: 1px -1px 15px -3px rgba(0,0,0,0.12);
+-webkit-box-shadow: 1px -1px 15px -3px rgba(0,0,0,0.12);
+-moz-box-shadow: 1px -1px 15px -3px rgba(0,0,0,0.12);
+}
