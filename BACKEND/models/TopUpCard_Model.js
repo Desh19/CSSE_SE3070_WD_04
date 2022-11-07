@@ -4,7 +4,8 @@ const mongoose = require('mongoose');
 const PaymentSchema = new mongoose.Schema(
     {
       AccountantId:{type: String, requried: true, trim: true},
-      AccountantName:{type: String, requried: true, trim: true},
+      firstName:{type: String, requried: true, trim: true},
+      lastName: {type: String, requried: true, trim: true},
       cardholdername: {type: String, requried: true, trim: true},
       cardNum:{type: String, requried: true,trim: true},
       cardexpiryDate: {type: Date,required: false,},
