@@ -43,7 +43,7 @@ export default function CreditBalance() {
 
         <center>
 
-      <div class="card text-center w-50 ">
+      <div class="card text-center w-51 ">
         <div class="card-header">
           <h3 class="card-title">Available Credit Balance</h3>
         </div>
@@ -62,14 +62,8 @@ export default function CreditBalance() {
       </center>
         
       </MDBContainer>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+    
+   
       <Footer />
     </div>
   );
