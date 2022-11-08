@@ -159,6 +159,8 @@ body{
 }
 
 .slider{
+  margin-top: -3%;
+  margin-left: -8%;
   width: 800px;
   height: 500px;
   border-radius: 10px;
@@ -374,6 +376,8 @@ body{
 }
 
 .main{
+    margin-top: -50%;
+    margin-left: 62%;
     width: 100%;
     max-width: 95%;
     display: flex;
