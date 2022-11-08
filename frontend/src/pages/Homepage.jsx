@@ -104,7 +104,7 @@ export default function Homepage() {
               <div className="card-box">
                 <div className="card-content">
                   <h3>Time Tables</h3>
-                  <Link aria-current="page" to={"/ApproveCourses"}>Click Here</Link>
+                  <Link aria-current="page" to={"#"}>Click Here</Link>
                 </div>
               </div>
             </div>
