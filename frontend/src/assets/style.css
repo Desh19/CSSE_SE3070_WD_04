@@ -367,6 +367,9 @@ body{
 	color: #1d2c48;
 }
 
+.about{
+  display: flex;
+}
 
 
 .about-text{
@@ -380,6 +383,7 @@ body{
     max-width: 95%;
     align-items: center;
     text-align: left;
+    display: flex;
     justify-content: space-around;
 }
 
