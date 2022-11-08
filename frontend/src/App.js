@@ -10,6 +10,11 @@ import Qrcode from "./pages/Qrcode";
 import BusLocation from "./pages/BusLocation";
 import Logout from "./components/Logout";
 import LandingPage from "./pages/LandingPage";
+import Dashboard from "./pages/Dashboard";
+import ViewAllTimeTable from "./pages/ViewAllTimeTable";
+import AddTimetable from "./pages/AddTimetable";
+import ViewAllRoute from "./pages/ViewAllRoute";
+import AddRoute from "./pages/AddRoute";
 
 //Assigning route paths to created pages
 
@@ -28,6 +33,12 @@ function App() {
           <Route path="/credbal" element={<CreditBalance/>} />
           <Route path="/qr" element={<Qrcode/>} />
           <Route path="/busloc" element={<BusLocation/>} />
+          <Route path="/admin/dashboard" element={<Dashboard/>} />
+          <Route path="/admin/timetables" element={<ViewAllTimeTable/>} />
+          <Route path="/admin/addtimetables" element={<AddTimetable/>} />
+          <Route path="/admin/routes" element={<ViewAllRoute/>} />
+          <Route path="/admin/addroute" element={<AddRoute/>} />
+
         </Routes>
       </BrowserRouter>
     </div>
