@@ -12,7 +12,11 @@ export default function Header() {
       <div>
         <nav class="navbar navbar-expand-lg  navbar fixed-top">
         <div class="container-fluid">
-            <a><Link className="navbar-brand bar" aria-current="page" to="/">SL PUBLIC TRANSPORT</Link></a>
+        {localStorage.getItem("accesstoken") ? (
+            <a><Link className="navbar-brand bar" aria-current="page" to="/homepage">SL PUBLIC TRANSPORT</Link></a>
+            ) : (
+              <a><Link className="navbar-brand bar" aria-current="page" to="/">SL PUBLIC TRANSPORT</Link></a>
+            )}
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
