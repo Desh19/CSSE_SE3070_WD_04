@@ -104,7 +104,9 @@ export default function Homepage() {
               <div className="card-box">
                 <div className="card-content">
                   <h3>Time Tables</h3>
-                  <Link aria-current="page" to={"#"}>Click Here</Link>
+                  <MDBBtn href="/timetable" className="btn btn-primary btn-lg">
+                    Click Here
+                  </MDBBtn>
                 </div>
               </div>
             </div>

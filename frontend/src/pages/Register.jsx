@@ -30,7 +30,6 @@ export default function Register() {
   const UserData = {
     name,
     mobile,
-    type: "LocalUser",
     email_address,
     nic,
     password,

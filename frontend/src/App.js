@@ -4,6 +4,7 @@ import './App.css';
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Homepage from "./pages/Homepage";
+import TimeTable from "./pages/TimeTable";
 import TravelHistory from "./pages/TravelHistory";
 import CreditBalance from "./pages/CreditBalance";
 import Qrcode from "./pages/Qrcode";
@@ -29,6 +30,7 @@ function App() {
           <Route path="/logout" element={<Logout/>} />
           <Route path="/register" element={<Register/>} />
           <Route path="/homepage" element={<Homepage/>} />
+          <Route path="/timetable" element={<TimeTable/>} />
           <Route path="/travhist" element={<TravelHistory/>} />
           <Route path="/credbal" element={<CreditBalance/>} />
           <Route path="/qr" element={<Qrcode/>} />
