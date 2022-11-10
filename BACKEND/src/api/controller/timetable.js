@@ -4,7 +4,7 @@ import timetable from "../models/timetable.js";
 import jwt from 'jsonwebtoken';
 
 
-// Insert one user
+// Insert one timetable
 export const insertTimetable = async (request, response, next) => {
 
 	await TimetableService.insertTimetable(request.body)
@@ -22,10 +22,12 @@ export const insertTimetable = async (request, response, next) => {
 
 
 // Get all timetable
+
 export const getAllTimetable = async (request, response, next) => {
-	await TimetableService.getAllTimetable()
+	await TimetableService.getAllTimetable(request.params)
 		.then(async (data) => {
-			response.status(200).send({status:"Success",data:data})
+			// response.status(200).send({status:"Success",data:data})
+			response.json(data)
 			next();
 		})
 		.catch((error) => {
