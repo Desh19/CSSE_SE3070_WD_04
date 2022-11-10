@@ -18,6 +18,16 @@ import {
 
 } from "./travel.js";
 
+//importing implemented functions from timetable.js
+
+import {
+	insertTimetable,
+	getAllTimetable,
+
+} from "./timetable.js";
+
+
+
 //exporting implemented functions
 
 export default {
@@ -30,5 +40,8 @@ export default {
 	insertTravel,
 	getAllTravels,
 	setDestination,
+
+	insertTimetable,
+	getAllTimetable,
 	
 };
