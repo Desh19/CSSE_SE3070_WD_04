@@ -29,7 +29,8 @@ export const insertUser = async (request, response, next) => {
 export const getAllUsers = async (request, response, next) => {
 	await UserService.getAllUsers()
 		.then(async (data) => {
-			response.status(200).send({status:"Success",data:data})
+			// response.status(200).send({status:"Success",data:data})
+			response.json(data)
 			next();
 		})
 		.catch((error) => {

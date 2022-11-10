@@ -16,6 +16,7 @@ import ViewAllTimeTable from "./pages/ViewAllTimeTable";
 import AddTimetable from "./pages/AddTimetable";
 import ViewAllRoute from "./pages/ViewAllRoute";
 import AddRoute from "./pages/AddRoute";
+import UserProfiles from "./pages/UserProfiles";
 
 //Assigning route paths to created pages
 
@@ -40,6 +41,7 @@ function App() {
           <Route path="/admin/addtimetables" element={<AddTimetable/>} />
           <Route path="/admin/routes" element={<ViewAllRoute/>} />
           <Route path="/admin/addroute" element={<AddRoute/>} />
+          <Route path="/admin/userprofiles" element={<UserProfiles/>} />
 
         </Routes>
       </BrowserRouter>
