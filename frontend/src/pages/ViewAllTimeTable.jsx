@@ -20,11 +20,13 @@ export default function ViewAllTimeTable() {
 
             <div className='tableItem'>
 
-            <h3>Route : route name</h3>
+           
 
             <table class="table tb">
               <thead>
                 <tr>
+                  <th scope="col">Route No</th>
+                  <th scope="col">Bus No</th>
                   <th scope="col">Start Location</th>
                   <th scope="col">End Location</th>
                   <th scope="col">Start Time</th>
@@ -34,6 +36,8 @@ export default function ViewAllTimeTable() {
               </thead>
               <tbody>
                 <tr>
+                  <td>177</td>
+                  <td>ND-3017</td>
                   <td>Kaduwela</td>
                   <td>Kollupitiya</td>
                   <td>8.00 am</td>
