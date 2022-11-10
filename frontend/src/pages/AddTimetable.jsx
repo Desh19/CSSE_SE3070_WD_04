@@ -19,11 +19,13 @@ export default function AddTimetable() {
 
               <div className='tableItem'>
 
-              <h3>Route : route name</h3>
+            
 
             <table class="table tb">
               <thead>
                 <tr>
+                  <th scope="col">Route No</th>
+                  <th scope="col">Bus No</th>
                   <th scope="col">Start Location</th>
                   <th scope="col">End Location</th>
                   <th scope="col">Start Time</th>
@@ -32,6 +34,8 @@ export default function AddTimetable() {
               </thead>
               <tbody>
                 <tr>
+                  <td><input type="text"/></td>
+                  <td><input type="text"/></td>
                   <td><input type="text"/></td>
                   <td><input type="text"/></td>
                   <td><input type="time"/></td>
