@@ -17,4 +17,9 @@ export default function (app) {
 	app.post("/travel/setsource/", controller.insertTravel); // insert one sample
 	app.post("/travel/setdestination/", controller.setDestination); // insert one sample
 	app.get("/travel/:email", controller.getAllTravels); // insert one sample
+
+	//timetable endpoint
+	app.post("/timetable/", controller.insertTimetable); // insert one sample
+	app.get("/timetable/", controller.getAllTimetable); // get all samples
+
 }
