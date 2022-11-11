@@ -24,3 +24,28 @@ export const getAllTimetable = async () => {
 			throw new Error(error.message);
 		});
 };
+
+// delete one timetable data
+
+export const deletetimetable = async (id) => {
+	return await timetableModel.findByIdAndDelete(id)
+		.then((timetable) => {
+			return timetable;
+		})
+		.catch((error) => {
+			throw new Error(error.message);
+		});
+};
+
+// Get one timetable
+
+export const getOneTimetable = async (id) => {
+	return await timetableModel.findById(id)
+		.then((timetable) => {
+			return timetable;
+		})
+		.catch((error) => {
+			throw new Error(error.message);
+		});
+};
+

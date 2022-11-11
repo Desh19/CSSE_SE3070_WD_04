@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState,useEffect } from "react";
 import axios from "axios";
+import "../assets/style.css";
 import {
     MDBBtn,
     MDBContainer,
@@ -45,7 +46,7 @@ export default function Qrcode() {
       <br/>
       <br/>
       <MDBContainer fluid className="p-3">
-      <h1>QR Code</h1>
+      <h1 class="qrtitle">QR Code</h1>
       <br/>
       <img style={{width:"300px"}} src={qrcode} />
       </MDBContainer>

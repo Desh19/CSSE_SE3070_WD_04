@@ -21,5 +21,8 @@ export default function (app) {
 	//timetable endpoint
 	app.post("/timetable/", controller.insertTimetable); // insert one sample
 	app.get("/timetable/", controller.getAllTimetable); // get all samples
+	app.delete("/deletetime/:id", controller.deletetimetable); // delete one sample
+	app.put("/updatetime/:id", controller.updateTimetable); // update one sample
+	app.get("/timetable/:id", controller.getOneTimetable); // get one sample
 
 }

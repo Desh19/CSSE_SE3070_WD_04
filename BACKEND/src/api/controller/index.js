@@ -24,7 +24,10 @@ import {
 
 import {
 	insertTimetable,
-	getAllTimetable
+	getAllTimetable,
+	deletetimetable,
+	updateTimetable,
+	getOneTimetable,
 
 } from "./timetable.js";
 
@@ -45,6 +48,9 @@ export default {
 
 	insertTimetable,
 	getAllTimetable,
+	deletetimetable,
+	updateTimetable,
+	getOneTimetable,
 
 
 };
