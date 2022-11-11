@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import Slidebar from '../components/Slidebar';
 import Header from "../components/Header";
 import "../assets/addtimetable.css";
+import axios from 'axios';
+import swal from "sweetalert";
 
 
 export default function ViewAllTimeTable() {
@@ -21,6 +23,26 @@ export default function ViewAllTimeTable() {
     };
     getTimetable();
   }, []);
+
+  const onDelete = (id) => {
+    axios.delete("http://localhost:8090/deletetime/"  + id)
+    .then(() => {
+
+      swal({
+        title: "Success!",
+        text: "Time Table Data deleted Successfully",
+        icon: 'success',
+        timer: 5000,
+        button: false,
+      });
+
+      window.location.reload();
+    })
+    .catch(() => {
+      alert("Something went wrong");
+      window.location.reload();
+    })
+  }
 
   
   return (
@@ -64,8 +86,10 @@ export default function ViewAllTimeTable() {
                   <td>{timetdata.start_time}</td>
                   <td>{timetdata.end_time}</td>
                   <td>
+                  <a href={`/admin/Updatetime/${timetdata._id}`}>
                     <button class='btn btn-primary m-1'>Update</button>
-                    <button class='btn btn-danger m-1'>Remove</button>
+                  </a>
+                    <button class='btn btn-danger m-1' onClick={onDelete.bind(this, timetdata._id)}>Remove</button>
                     </td>
                 </tr>
 

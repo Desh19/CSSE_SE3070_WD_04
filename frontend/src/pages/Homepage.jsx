@@ -110,12 +110,24 @@ export default function Homepage() {
                 </div>
               </div>
             </div>
+
             <div className="sec-card">
               <div className="card-box">
                 <div className="card-content">
-                  <h3>Routes</h3>
+                  <h3>Travel History</h3>
+                  <MDBBtn href="/travhist" className="btn btn-primary btn-lg">
+                    View
+                  </MDBBtn>
+                </div>
+              </div>
+            </div>
+
+            <div className="sec-card">
+              <div className="card-box">
+                <div className="card-content">
+                  <h3>QR Code</h3>
                   <MDBBtn href="/qr" className="btn btn-primary btn-lg">
-                    Bus Location
+                    Click Here
                   </MDBBtn>
                 </div>
               </div>
